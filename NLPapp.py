@@ -81,19 +81,24 @@ class NLPapp:
             client = nlpcloud.Client("gpt-oss-120b", API_KEY, gpu=True)
             response = client.entities(para, searched_entity=search)
             print(response)
-        
-        except Exception as e:
-            print("Error:", e)
 
+        except Exception as e:
+            print("=" * 40)
+            print("Failed to connect to the NLP Cloud API.")
+            print(f"Error: {e}")
+            print("=" * 40)
     def comment_sentiment(self):
         para = input("Enter the paragraph : ")
         try:
             client = nlpcloud.Client("gpt-oss-120b", API_KEY, gpu=True)
             response = client.sentiment(para, target="NLP Cloud")
             print(response)
-        
+
         except Exception as e:
-            print("Error:", e)
+            print("=" * 40)
+            print("Failed to connect to the NLP Cloud API.")
+            print(f"Error: {e}")
+            print("=" * 40)
 
 
 obj = NLPapp()
