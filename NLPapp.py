@@ -1,7 +1,6 @@
-import nlpcloud
-
 import os
 from dotenv import load_dotenv
+import nlpcloud
 
 load_dotenv()
 
@@ -87,6 +86,7 @@ class NLPapp:
             print("Failed to connect to the NLP Cloud API.")
             print(f"Error: {e}")
             print("=" * 40)
+
     def comment_sentiment(self):
         para = input("Enter the paragraph : ")
         try:
