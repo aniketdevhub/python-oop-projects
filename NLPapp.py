@@ -90,7 +90,9 @@ class NLPapp:
     def comment_sentiment(self):
         para = input("Enter the paragraph : ")
         try:
-            client = nlpcloud.Client("gpt-oss-120b", API_KEY, gpu=True)
+            client = nlpcloud.Client(
+                "gpt-oss-120b", API_KEY, gpu=True
+            )
             response = client.sentiment(para, target="NLP Cloud")
             print(response)
 
