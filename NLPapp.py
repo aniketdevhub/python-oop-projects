@@ -82,9 +82,9 @@ class NLPapp:
             print(response)
 
         except Exception as e:
-            print("=\n" * 40)
+            print("=" * 40)
             print("Failed to connect to the NLP Cloud API.")
-            print("=\n" * 40)
+            print("=" * 40)
             print(f"Error: {e}")
             print("=" * 40)
 
@@ -98,9 +98,9 @@ class NLPapp:
             print(response)
 
         except Exception as e:
-            print("=\n" * 40)
+            print("=" * 40)
             print("Failed to connect to the NLP Cloud API.")
-            print("=\n" * 40)
+            print("=" * 40)
             print(f"Error: {e}")
             print("=" * 40)
 
