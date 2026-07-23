@@ -49,7 +49,7 @@ NLP-App/
 1. Clone the repository.
 
 ```bash
-git clone https://github.com/your-username/python-oop-projects.git
+git clone https://github.com/aniketdevhub/python-oop-projects.git
 ```
 
 2. Navigate to the project directory.
